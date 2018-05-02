@@ -1,0 +1,58 @@
+<patTemplate:tmpl name="pageoutput" unusedvars="strip">
+{JOMRES_POPUPURL_GLOBALVAR}
+
+<div title="{PROPERTY_NAME}" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 appear" data-animated="flipInX" data-start="{ANIMATION_DELAY}">
+	<!-- OPE -->
+	<div class="ngm-thumb" onmouseover="document.getElementById('jr_special_offer_{RANDOM_IDENTIFIER}').style.display = 'none';" onmouseout="document.getElementById('jr_special_offer_{RANDOM_IDENTIFIER}').style.display = 'block';">
+		<div id="jr_special_offer_{RANDOM_IDENTIFIER}">{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}</div>
+		<a href="#module_{RANDOM_IDENTIFIER}_popup" data-toggle="modal" random_identifier="{RANDOM_IDENTIFIER}" property_name="{PROPERTY_NAME}" property_uid="{PROPERTY_UID}"><img src="{IMAGEMEDIUM}" alt="{PROPERTY_NAME}" title="{PROPERTY_NAME}" class="img-responsive" /></a>
+		<div class="mask">
+			<div class="main">
+				<!-- OPE -->
+				<h5  style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: 60%;">{PROPERTY_NAME} {STARSIMAGES} {SUPERIOR}</h5>
+				<!-- OPE -->
+				<div class="price" style="max-width: 40%;">
+					{PRICE_PRICE} <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{PRICE_POST_TEXT}</span>
+				</div>
+			</div>
+			<div class="content">
+				<!-- OPE<p>{PROPERTY_STREET}, {PROPERTY_TOWN}, {PROPERTY_POSTCODE}, {PROPERTY_REGION}, {PROPERTY_COUNTRY}</p>  -->
+				<a href="#module_{RANDOM_IDENTIFIER}_popup" data-toggle="modal" random_identifier="{RANDOM_IDENTIFIER}" property_name="{PROPERTY_NAME}" property_uid="{PROPERTY_UID}" class="btn btn-info btn-block">{QUICKINFORMATION}</a>
+				<a href="{MOREINFORMATIONLINK}" class="btn btn-primary btn-block" title="{PROPERTY_NAME}">{MOREINFORMATION}</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+   jomresJquery(document).ready(function(){
+	 jomresJquery('#module_{RANDOM_IDENTIFIER}_popup').appendTo("body");
+	});
+</script>
+
+<div class="modal fade" id="module_{RANDOM_IDENTIFIER}_popup"></div>
+
+</patTemplate:tmpl>
+
+<patTemplate:comment>
+	These are included in the template in case you wish to use them.
+	{PROPERTY_STREET}
+	{PROPERTY_TOWN}
+	{PROPERTY_POSTCODE}
+	{PROPERTY_REGION}
+	{PROPERTY_COUNTRY}
+	{PROPERTY_COUNTRY_CODE}
+	{PROPERTY_TEL}
+	{PROPERTY_FAX}
+	{STARS}
+	{STARSIMAGES}
+	{LAT}
+	{LONG}
+	{PROPERTY_DESCRIPTION}
+	{PROPERTY_CHECKIN_TIMES}
+	{PROPERTY_AREA_ACTIVITIES}
+	{PROPERTY_DRIVING_DIRECTIONS}
+	{PROPERTY_AIRPORTS}
+	{PROPERTY_OTHERTRANSPORT}
+	{PROPERTY_POLICIES_DISCLAIMERS}
+</patTemplate:comment>

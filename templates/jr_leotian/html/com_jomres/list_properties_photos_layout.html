@@ -1,0 +1,126 @@
+<patTemplate:tmpl name="pageoutput" unusedvars="strip">
+{JOMRES_POPUPURL_GLOBALVAR}
+
+{HEADER}
+
+<patTemplate:comment>
+<div class="row">
+	<div class="col-md-12">
+		{PAGING}
+	</div>
+</div>
+</patTemplate:comment>
+
+<div class="row">
+	<patTemplate:tmpl name="property_details" unusedvars="strip">
+	<div class="jomres_property_list_propertywrapper photo-view col-xs-12 col-sm-12 col-md-6 col-lg-4 appear" id="{UID}" data-animated="zoomIn" data-start="0">
+		<div class="panel {BUDGET_BORDER_CLASS} {FEATURED_LISTINGS_CLASS}">
+			
+			<div class="panel-heading visible-xs visible-sm">
+				<h2 class="panel-title"><a href="{MOREINFORMATIONLINK}">{PROPERTYNAME}</a> <span class="pull-right visible-md visible-lg"><input type="checkbox" name="compare" value="{UID}" autocomplete="off"/> {_JOMRES_COMPARE}</span></h2>
+			</div>
+			
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="property-pic-wrapper">
+							{PROPERTY_IMAGE_OR_SLIDESHOW}
+							{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}
+							<div class="{REQUIRE_APPROVAL_CLASS}">{REQUIRE_APPROVAL}</div>
+							<div class="average-rating"><i class="fa fa-thumbs-o-up"></i> {AVERAGE_RATING}</div>
+							<div class="jomres-plist-prices-lg visible-md visible-lg">
+								{PRICE_PRE_TEXT}
+								<span class="big-price">{PRICE_PRICE}</span>
+								{PRICE_POST_TEXT}
+								<span class="big-price big-total-price">{PRICE_CUMULATIVE}</span>
+								{FOR} {STAY_DAYS} {NIGHTS_TEXT}
+							</div>
+							<div class="compare-overlay visible-md visible-lg">
+								<input type="checkbox" name="compare" value="{UID}" autocomplete="off"/> {_JOMRES_COMPARE}
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						
+						<p class="visible-md visible-lg">&nbsp;</p>
+					
+						<div class="row">
+							<div class="col-md-8">
+								<h2 class="page-header visible-md visible-lg"><a href="{MOREINFORMATIONLINK}">{PROPERTYNAME}</a></h2>
+								<div class="visible-md visible-lg"><span class="label label-default">{PROPERTY_TYPE}</span> <span>{STARS} {SUPERIOR}</span></div>
+							</div>
+							<div class="col-md-4">
+								<span class="visible-md visible-lg pull-right icons-only">
+									<!--<a href="{MOREINFORMATIONLINK}" class="btn btn-info" title="{MOREINFORMATION}"><i class="fa fa-info"></i></a>-->
+									<a href="javascript:void(0);" id="shortlist_{UID}" onclick="shortlist('{UID}')" class="btn btn-default hidden-xs">{SHORTLIST}</a>
+									<a href="{LINK}" class="btn btn-success" title="{___JOMRES_FRONT_MR_MENU_BOOKAROOM}"><i class="fa fa-shopping-cart"></i></a>
+								</span>
+							</div>
+						</div>
+						
+						<div class="row visible-xs visible-sm">
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								
+								<p class="visible-xs visible-sm">&nbsp;</p>
+								
+								<div><span class="label label-default">{PROPERTY_TYPE}</span> <span>{STARS} {SUPERIOR}</span></div>
+								
+								<p><em>{PROP_TOWN}, {PROP_REGION}, {PROP_COUNTRY}</em></p>
+								
+
+								
+								<a href="#property_reviews{UID}" ajax_task="show_property_reviews" data-toggle="modal" random_identifier="{UID}" property_name="{PROPERTYNAME}" property_uid="{UID}" class="hidden-xs hidden-sm"><i class="fa fa-thumbs-o-up"></i> {_JOMRES_REVIEWS_CLICKTOSHOW}</a>
+								
+							</div>
+							
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 jomres-plist-prices-sm visible-xs visible-sm">
+								<div class="row">
+									<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+										<span class="big-price">{PRICE_PRICE}</span>
+										{PRICE_POST_TEXT}
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12 prices-from">
+										<i class="fa fa-angle-left"></i> {PRICE_PRE_TEXT} <i class="fa fa-angle-right"></i>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+										<span class="big-price big-total-price">{PRICE_CUMULATIVE}</span>
+										{FOR} {STAY_DAYS} {NIGHTS_TEXT}
+									</div>
+								</div>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+			</div>
+	
+			<div class="panel-footer visible-xs visible-sm">
+				<a href="{LINK}" class="btn btn-success pull-right"><i class="fa fa-shopping-cart"></i> {BOOKTHIS_TEXT}</a>
+				<a href="{MOREINFORMATIONLINK}" class="btn btn-info"><i class="fa fa-info"></i> {MOREINFORMATION}</a>
+				<a href="#property_reviews{UID}" ajax_task="show_property_reviews" data-toggle="modal" random_identifier="{UID}" property_name="{PROPERTYNAME}" property_uid="{UID}" class="btn btn-default hidden-xs hidden-sm"><i class="fa fa-thumbs-o-up"></i> {_JOMRES_REVIEWS_CLICKTOSHOW}</a> 
+				<a href="javascript:void(0);" id="shortlist_{UID}" onclick="shortlist('{UID}')" class="btn btn-default hidden-xs">{SHORTLIST}</a>
+			</div>
+	
+		</div>
+	</div>
+	<script>
+	   jomresJquery(document).ready(function(){
+		 jomresJquery('#module_{RANDOM_IDENTIFIER}_popup', '#property_reviews{UID}').appendTo("body");
+		});
+	</script>
+	<div class="modal fade" id="module_{RANDOM_IDENTIFIER}_popup"></div><!-- /.modal info -->
+	<div class="modal fade" id="property_reviews{UID}"></div><!-- /.modal reviews -->
+	</patTemplate:tmpl>
+</div>
+
+<div id="livescrolling_results"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		{PAGING}
+	</div>
+</div>
+
+<patTemplate:comment>{HEADER}</patTemplate:comment>
+</patTemplate:tmpl>
