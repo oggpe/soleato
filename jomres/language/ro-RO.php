@@ -1737,7 +1737,7 @@ jr_define('_JOMRES_COMMISSION', 'Commission');
 jr_define('_JOMRES_MEDIA_CENTRE_NOTES_CORE_EXTRAS', 'If you upload multiple images for individual optional extras, only the first image will be used.');
 jr_define('_JRPORTAL_INVOICES_PAYNOW', 'Pay now');
 jr_define('_JRPORTAL_INVOICES_PAYNOW_DESC', 'This invoice in now due. Please click the button to select the payment method.');
-jr_define('_JOMRES_EXTRAS_TEMPLATE', "Here's a list of some of the great things you can purchase while making a booking at this property. ");
+jr_define('_JOMRES_EXTRAS_TEMPLATE', "Vă prezentăm o listă cu unele dintre serviciile suplimentare, pe care le-ați putea să adaugați la rezervarea Dumneavoastră.");
 jr_define('GATEWAYS_INSTRUCTIONS', 'On this page you can configure any installed gateways. These options allow you to take payments for any Commission or Subscription invoices. Frontend settings can only be overridden by Paypal, all other gateways will need to be configured via the Property Configuration -> Gateways tab, however if a gateway appears in this list then it should be capable of processing both Booking deposit payments and invoice payments.');
 jr_define('EXTRAS_INCLUDE_IN_PROPERTYDETAILS', 'Show in property details page?');
 jr_define('PROPERTY_DETAILS_PAGE_OPTIONS', 'Property Details page settings');
