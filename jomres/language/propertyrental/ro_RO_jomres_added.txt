@@ -1,0 +1,1 @@
+jr_define( '_JOMRES_JDP_NO_ROOMS_FOR_SELECTED_GUEST_TYPES', 'Nu sunt disponibile camere pentru tipurile de oaspeți selectate. Selectați o altă combinație.');
