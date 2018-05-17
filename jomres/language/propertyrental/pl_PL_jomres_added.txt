@@ -1,1 +1,3 @@
 jr_define( '_JOMRES_JDP_NO_ROOMS_FOR_SELECTED_GUEST_TYPES', 'Brak dostępnych pokoi dla wybranych typów gości. Wybierz inną kombinację.');
+
+jr_define( '_JOMRES_SOLEATO_NO_ROOMS_FOR_SELECTED_TARIFF_OR_DATES', 'Brak dostępnych pokoi dla wybranego okresu i/lub typów gości' );
