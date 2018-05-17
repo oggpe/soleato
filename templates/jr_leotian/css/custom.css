@@ -125,3 +125,5 @@ div#jr_special_offer:empty {
     background-color: #0aaa7a;
     margin: 7px 0 10px 0;
 }
+
+.steps a:hover {cursor: default; }
