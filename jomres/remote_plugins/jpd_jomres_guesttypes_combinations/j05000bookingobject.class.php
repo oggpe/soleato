@@ -382,6 +382,13 @@ if (!class_exists('booking')) {
                 $this->resetPricingOutput = true;
                 $this->setMonitoring($this->sanitiseOutput(jr_gettext('_JOMRES_BOOKINGFORM_MONITORING_CHOOSE_MORE_ROOMS', '_JOMRES_BOOKINGFORM_MONITORING_CHOOSE_MORE_ROOMS', false, false)));
             }
+		
+	    /*OPE added */
+            if (empty($this->rooms_list_style_roomstariffs)) {
+                $this->resetPricingOutput = true;
+                $this->setMonitoring($this->sanitiseOutput(jr_gettext('_JOMRES_SOLEATO_NO_ROOMS_FOR_SELECTED_TARIFF_OR_DATES', '_JOMRES_SOLEATO_NO_ROOMS_FOR_SELECTED_TARIFF_OR_DATES', false, false)));
+            }
+		
             if (empty($this->requestedRoom)) {
                 $this->resetPricingOutput = true;
                 if ($this->cfg_singleRoomProperty != '1') {
