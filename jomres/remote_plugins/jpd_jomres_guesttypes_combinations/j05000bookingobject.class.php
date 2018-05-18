@@ -351,9 +351,7 @@ if (!class_exists('booking')) {
             }
 
             if (!$this->jpd_check_if_all_forbidden() )  { 
-                $this->resetPricingOutput = true;
-                /*OPE*/
-                /*$this->setMonitoring($this->sanitiseOutput('Not rooms available for the selected guest types.'));*/
+                $this->resetPricingOutput = true;#
                 $this->setMonitoring($this->sanitiseOutput(jr_gettext('_JOMRES_JDP_NO_ROOMS_FOR_SELECTED_GUEST_TYPES', '_JOMRES_JDP_NO_ROOMS_FOR_SELECTED_GUEST_TYPES', false, false)));
             }
 
@@ -384,7 +382,7 @@ if (!class_exists('booking')) {
             }
 		
 	    /*OPE added */
-            if (empty($this->rooms_list_style_roomstariffs)) {
+            if (empty($this->rooms_list_style_roomstariffs) && empty($this->requestedRoom) ) {
                 $this->resetPricingOutput = true;
                 $this->setMonitoring($this->sanitiseOutput(jr_gettext('_JOMRES_SOLEATO_NO_ROOMS_FOR_SELECTED_TARIFF_OR_DATES', '_JOMRES_SOLEATO_NO_ROOMS_FOR_SELECTED_TARIFF_OR_DATES', false, false)));
             }
