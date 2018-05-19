@@ -1,3 +1,3 @@
-jr_define( '_JOMRES_JDP_NO_ROOMS_FOR_SELECTED_GUEST_TYPES', 'Nu sunt disponibile camere pentru tipurile de oaspeți selectate. Selectați o altă combinație.');
+jr_define( '_JOMRES_JDP_NO_ROOMS_FOR_SELECTED_GUEST_TYPES', 'Nu sunt disponibile camere pentru tipurile de oaspeți selectate. Selectați o altă combinație de oaspeți');
 
-jr_define( '_JOMRES_SOLEATO_NO_ROOMS_FOR_SELECTED_TARIFF_OR_DATES', 'Nu sunt disponibile camere pentru perioada selectată și/sau pentru tipurile de oaspeți' );
+jr_define( '_JOMRES_SOLEATO_NO_ROOMS_FOR_SELECTED_TARIFF_OR_DATES', 'Nu sunt disponibile camere pentru perioada selectată și/sau pentru tipurile de oaspeți. Selectați o altă perioadă și/sau tipuri de oaspeți' );
