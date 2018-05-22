@@ -127,3 +127,7 @@ div#jr_special_offer:empty {
 }
 
 .steps a:hover {cursor: default; }
+
+.photo-view .compare-overlay {
+    bottom: -15px;
+}
