@@ -19,3 +19,4 @@ jr_define('_JOMRES_AJAXFORM_COUPON_APPLYBUTTON', 'Aplica');
 jr_define('_JOMRES_AJAXFORM_COUPON_DISCOUNTVALUE', 'Suma cod de reducere');
 jr_define('_JOMCOMP_MYUSER_VIEWFAVOURITES', 'Uinați-vă la cele preferabile');
 jr_define('GUEST_BUDGET', 'Buget');
+jr_define('_JOMRES_BOOKINGFORM_MONITORING_TOO_MANY_IN_PARTY_FOR_TARIFFS', 'Ați selectat prea mulți oaspeți pentru tarifele disponibile');
