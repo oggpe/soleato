@@ -1,0 +1,67 @@
+<patTemplate:tmpl name="search" unusedvars="strip">
+
+<form action="{SUBMITURL}" method="GET" name="{FORMNAME}" role="form">
+<input type="hidden" name="option" value="com_jomres" />
+
+<div class="home-search appear" data-animated="fadeInLeft" data-start="0">
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="arrivalDate">{HARRIVALDATE}</label>
+			<div class="input-group">{ARRIVALDATE}</div>
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="departureDate">{HDEPARTUREDATE}</label>
+			<div class="input-group">{DEPARTUREDATE}</div>
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<!--<label class="control-label" for="country">{JOMRES_SEARCH_GEO_COUNTRYSEARCH}</label>
+			{COUNTRY}
+			<label class="control-label" for="region">{JOMRES_SEARCH_GEO_REGIONSEARCH}</label>
+			{REGION}-->
+			<label class="control-label" for="town">{JOMRES_SEARCH_GEO_TOWNSEARCH}</label>
+			{TOWN}
+		</div>
+	</div>
+	<!--
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="ptype">{JOMRES_SEARCH_PTYPES}</label>
+			{PTYPE}
+		</div>
+	</div>
+	-->
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="guestnumber">{HGUESTNUMBER}</label>
+			{GUESTNUMBER}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label">&nbsp;</label>
+			<input type="submit" class="btn btn-info btn-block" name="send" value="{HSEARCH}" />
+		</div>
+	</div>
+	
+	<div class="col-md-12">
+		<div class="form-group">
+			{CLEARDATES_CHECKBOX}
+		</div>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+</div>
+
+{HIDDEN}
+</form>
+<div class="clearfix"></div>
+</patTemplate:tmpl>

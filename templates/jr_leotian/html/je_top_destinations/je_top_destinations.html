@@ -1,0 +1,43 @@
+<patTemplate:tmpl name="pageoutput" unusedvars="strip">
+<style type="text/css">
+.je-top-destinations{margin-bottom:50px;text-align:left;}
+.je-top-destinations .jomres_property_list_propertywrapper {margin-bottom:20px;}
+</style>
+
+<div class="je-top-destinations">
+	<patTemplate:tmpl name="rows">
+		<div class="jomres_property_list_propertywrapper photo-view col-xs-12 col-sm-6 col-md-6 col-lg-4 appear" data-animated="flipInX" data-start="{DELAY}">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="property-pic-wrapper">
+								{TOWN_IMAGE}
+							</div>
+						</div>
+					</div>
+					<p>&nbsp;</p>
+					<div class="row">
+						<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+							<h2 class="page-header">{TOWN} <!--{REGION}--></h2>
+							<span>{COUNTRY_FLAG}&nbsp;{COUNTRY}</span>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="right">
+							<!--- OPE OPE -->
+							<a href="{TOWNLINK}">
+								<span class="label label-info">{COUNTER}&nbsp;{HPROPERTIES}</span>
+                                </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</patTemplate:tmpl>
+	
+	<div class="clearfix"></div>
+	<div align="center">
+		<a href="{URL}" title="{HBROWSEALLDESTINATIONS}" class="btn btn-primary">{HBROWSEALLDESTINATIONS}</a>
+	</div>
+</div>
+
+</patTemplate:tmpl>
