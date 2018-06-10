@@ -3,8 +3,12 @@
 
 <div title="{PROPERTY_NAME}" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 appear" data-animated="flipInX" data-start="{ANIMATION_DELAY}">
 	<!-- OPE -->
-	<div class="ngm-thumb" onmouseover="document.getElementById('jr_special_offer_{RANDOM_IDENTIFIER}').style.display = 'none';" onmouseout="document.getElementById('jr_special_offer_{RANDOM_IDENTIFIER}').style.display = 'block';">
-		<div id="jr_special_offer_{RANDOM_IDENTIFIER}">{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}</div>
+	<div class="ngm-thumb"
+		 onmouseover="document.getElementById('jr_special_offer_{RANDOM_IDENTIFIER}').children[0].style.display = 'none';"
+		 onmouseout="document.getElementById('jr_special_offer_{RANDOM_IDENTIFIER}').children[0].style.display = 'block';">
+		<div id="jr_special_offer_{RANDOM_IDENTIFIER}" class="visible-md visible-lg">
+			<div id="jr_special_offer_basic_module">{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}</div>
+		</div>
 		<a href="#module_{RANDOM_IDENTIFIER}_popup" data-toggle="modal" random_identifier="{RANDOM_IDENTIFIER}" property_name="{PROPERTY_NAME}" property_uid="{PROPERTY_UID}"><img src="{IMAGEMEDIUM}" alt="{PROPERTY_NAME}" title="{PROPERTY_NAME}" class="img-responsive" /></a>
 		<div class="mask">
 			<div class="main">
@@ -14,6 +18,10 @@
 				<div class="price" style="max-width: 40%;">
 					{PRICE_PRICE} <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{PRICE_POST_TEXT}</span>
 				</div>
+			</div>
+			<!--OPE -->
+			<div class="row">
+				<div id="jr_special_offer_responsive" class="visible-xs visible-sm col-xs-12 col-sm-12 col-md-8 col-lg-8" >{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}</div>
 			</div>
 			<div class="content">
 				<!-- OPE<p>{PROPERTY_STREET}, {PROPERTY_TOWN}, {PROPERTY_POSTCODE}, {PROPERTY_REGION}, {PROPERTY_COUNTRY}</p>  -->
