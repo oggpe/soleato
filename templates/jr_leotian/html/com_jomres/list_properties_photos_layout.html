@@ -25,8 +25,10 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="property-pic-wrapper">
 							{PROPERTY_IMAGE_OR_SLIDESHOW}
-							{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}
+							<div  id="jr_special_offer" class="visible-md visible-lg">{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}</div>
+
 							<div class="{REQUIRE_APPROVAL_CLASS}">{REQUIRE_APPROVAL}</div>
+							<!--OPE-->
 							<!--<div class="average-rating"><i class="fa fa-thumbs-o-up"></i> {AVERAGE_RATING}</div>-->
 							<div class="jomres-plist-prices-lg visible-md visible-lg">
 								{PRICE_PRE_TEXT}
@@ -35,9 +37,10 @@
 								<span class="big-price big-total-price">{PRICE_CUMULATIVE}</span>
 								{FOR} {STAY_DAYS} {NIGHTS_TEXT}
 							</div>
-							<div class="compare-overlay visible-md visible-lg">
+							<!--OPE-->
+							<!--<div class="compare-overlay visible-md visible-lg">
 								<input type="checkbox" name="compare" value="{UID}" autocomplete="off"/> {_JOMRES_COMPARE}
-							</div>
+							</div>-->
 						</div>
 					</div>
 					
@@ -73,7 +76,10 @@
 								<a href="#property_reviews{UID}" ajax_task="show_property_reviews" data-toggle="modal" random_identifier="{UID}" property_name="{PROPERTYNAME}" property_uid="{UID}" class="hidden-xs hidden-sm"><i class="fa fa-thumbs-o-up"></i> {_JOMRES_REVIEWS_CLICKTOSHOW}</a>
 								
 							</div>
-							
+							<!--OPE -->
+							<div class="row">
+								<div id="jr_special_offer_responsive" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" >{CUSTOM_PROPERTY_FIELDS_DATA_SNIPPET}</div>
+							</div>
 							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 jomres-plist-prices-sm visible-xs visible-sm">
 								<div class="row">
 									<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
