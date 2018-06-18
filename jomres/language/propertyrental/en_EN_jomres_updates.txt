@@ -1,0 +1,1 @@
+jr_define('_JOMRES_CART_INFO', 'Please note, that if you leave soleato.com or close your browser your booking will be lost');jr_define('_JOMRES_CART_INFO', 'Note, these bookings have not been saved yet. If you log out or your session expires they will be lost. Remember to confirm your bookings!');
