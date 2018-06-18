@@ -21,7 +21,6 @@ jr_define('_JOMCOMP_MYUSER_VIEWFAVOURITES', 'Uinați-vă la cele preferabile');
 jr_define('GUEST_BUDGET', 'Buget');
 jr_define('_JOMRES_BOOKINGFORM_MONITORING_TOO_MANY_IN_PARTY_FOR_TARIFFS', 'Ați selectat prea mulți oaspeți pentru tarifele disponibile');
 jr_define('_JOMRES_CART_INFO', 'Vă rugăm să reţineti că dacă părăsiţi soleato.com sau inchideţi browser-ul dvs, rezervarea dvs. va dispare.');
-jr_define('_JOMRES_CART_SAVEFORLATER', 'Adaugaţi altă facilitate către rezervare dvs.');
 jr_define('_JOMRES_CART_SAVEFORLATER', 'Adăugați o altă cameră la rezervarea dvs.');
 
 /home/soleatoc/public_html/jomres/language/ro-RO.php
