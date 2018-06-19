@@ -20,7 +20,7 @@ jr_define('JPD_JOMRES_EMAILS_ENHANCER_DEPARTURE','Data plecării');
 jr_define('JPD_JOMRES_EMAILS_ENHANCER_TOTALG','Numărul total al invitaților');
 jr_define('JPD_JOMRES_EMAILS_ENHANCER_TOTALP','Prețul total');
 jr_define('JPD_JOMRES_EMAILS_ENHANCER_DEPOSIT','Cauțiunea necesară');
-jr_define('JPD_JOMRES_EMAILS_ENHANCER_BALANCE','Balance');
+jr_define('JPD_JOMRES_EMAILS_ENHANCER_BALANCE','Rest de plata');
 jr_define('JPD_JOMRES_EMAILS_ENHANCER_SPECIAL','Special Requirements');
 jr_define('JPD_JOMRES_EMAILS_ENHANCER_VIEWBB','Detalii rezervare');
 jr_define('JPD_JOMRES_EMAILS_ENHANCER_CHECKIN','Check in times');
