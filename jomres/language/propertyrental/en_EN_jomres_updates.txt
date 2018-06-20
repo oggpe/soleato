@@ -1,5 +1,7 @@
 jr_define('_JOMRES_CART_SAVEFORLATER', 'Add another room to your booking');
+jr_define('_JOMRES_CART_INFO', 'Please note, that if you leave soleato.com or close your browser your booking will be lost.<br/>If you finished with your bookings on soleato.com – click on the "Confirm" button and proceed with payment.<br/>If you wish to add more accommodations to your booking – go to the Home page of soleato.com, choose a hotel, and start a new booking process. As you finish with your bookings click on the "Confirm" button and you proceed with payment.');
 
 /home/soleatoc/public_html/jomres/language/en-GB.php
 
+jr_define('_JOMRES_CART_SAVEFORLATER', 'Add another room to your booking');
 jr_define('_JOMRES_CART_INFO', 'Please note, that if you leave soleato.com or close your browser your booking will be lost.<br/>If you finished with your bookings on soleato.com – click on the "Confirm" button and proceed with payment.<br/>If you wish to add more accommodations to your booking – go to the Home page of soleato.com, choose a hotel, and start a new booking process. As you finish with your bookings click on the "Confirm" button and you proceed with payment.');
