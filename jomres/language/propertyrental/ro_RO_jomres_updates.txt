@@ -27,6 +27,7 @@ jr_define('_JOMRES_CART_INFO', 'Vă rugăm să reţineti că dacă părăsiţi s
 jr_define('_JOMRES_CART_CONFIRM_BOOKINGS', 'Confirma rezervarea');
 jr_define('_JOMRES_CART_NOBOOKINGS_SAVED', 'Nu aveți încă rezervări salvate încă');
 jr_define('_JOMRES_CART_VIEWCART', 'Vizualizați rezervările salvate');
+jr_define('_JOMRES_AJAXFORM_COUPON_COUPONSAVED', 'Reducere aplicată la rezervarea dvs.');
 
 /home/soleatoc/public_html/jomres/language/ro-RO.php
 
