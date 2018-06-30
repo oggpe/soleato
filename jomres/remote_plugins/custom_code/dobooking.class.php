@@ -3784,7 +3784,10 @@ class dobooking
 	 */
 	public function checkPeopleNumbers($freeRoomsArray)
 	{
-		$totalFreeBeds = 0;
+		/*OPE added to correct wrong message when there is a black booking, 
+		the value -1 means that beds_available was not set and it has still the init value, 
+		the value is used in jpd_jomres_guesttypes_combinations\j05000bookingobject.class.php */
+		$totalFreeBeds = -1;/*OPE was 0*/
 		if (!empty($freeRoomsArray)) {
 			$n = count($freeRoomsArray);
 			$query = 'SELECT room_uid,max_people FROM #__jomres_rooms WHERE ';
