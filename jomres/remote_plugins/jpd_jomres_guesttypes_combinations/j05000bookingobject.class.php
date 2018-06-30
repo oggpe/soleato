@@ -368,7 +368,8 @@ if (!class_exists('booking')) {
                 $this->setMonitoring($this->sanitiseOutput(jr_gettext('_JOMRES_BOOKINGFORM_MONITORING_MORE_ROOMS_THAN_GUESTS', '_JOMRES_BOOKINGFORM_MONITORING_MORE_ROOMS_THAN_GUESTS', false, false)));
             }
             //if ($this->total_in_party > $this->beds_available && count($result)>0 && count($this->requestedRoom ) > 0)
-            if ($this->total_in_party > $this->beds_available && !empty($numberOfGuestTypes)) {
+	    /*OPE test added to correct wrong message  when there is a black booking, beds_available is set in custom_code/dobooking.class.php in function checkPeopleNumbers, $totalFreeBeds = -1  */	
+            if ($this->total_in_party > $this->beds_available && !empty($numberOfGuestTypes) /*OPE start*/ && $this->beds_available != -1 /*OPE end*/) {
                 $this->resetPricingOutput = true;
                 if ($this->cfg_singleRoomProperty != '1') {
                     $this->setMonitoring($this->sanitiseOutput(jr_gettext('_JOMRES_BOOKINGFORM_MONITORING_TOO_MANY_GUESTS_FOR_BEDS', '_JOMRES_BOOKINGFORM_MONITORING_TOO_MANY_GUESTS_FOR_BEDS', false, false)));
